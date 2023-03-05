@@ -1,11 +1,11 @@
 .App {
   text-align: center;
-  background-color: #000;
-  height: 100vh;
+  /* background-color: #000; */
+  /* height: 100vh; */
 }
 
-.title{ 
+.App-title{ 
   font-size: 48px;
-  padding-top: 45vh;
-  color: #fff;
+  /* padding-top: 45vh; */
+  /* color: #fff; */
 }
