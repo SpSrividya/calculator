@@ -1,46 +1,16 @@
+import video from "../assets/video/video.mp4";
+import './Root.css'
 const Root = () => {
-    return (
-      <>
-        <div id="sidebar">
-          <h1>React Router Contacts</h1>
-          <div>
-            <form id="search-form" role="search">
-              <input
-                id="q"
-                aria-label="Search contacts"
-                placeholder="Search"
-                type="search"
-                name="q"
-              />
-              <div
-                id="search-spinner"
-                aria-hidden
-                hidden={true}
-              />
-              <div
-                className="sr-only"
-                aria-live="polite"
-              ></div>
-            </form>
-            <form method="post">
-              <button type="submit">New</button>
-            </form>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href={`/contacts/1`}>Your Name</a>
-              </li>
-              <li>
-                <a href={`/contacts/2`}>Your Friend</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div id="detail"></div>
-      </>
-    );
-  }
+  return (
+    <>
+      <div className="root">
+        <video width="1000vw" height="1000vh" autoPlay muted loop>
+          <source src={video} type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </>
+  );
+};
 
-  export default Root
-  
+export default Root;
